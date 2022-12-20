@@ -74,7 +74,8 @@ const Product = ({id , title , price , description, category , image , index}) =
 				</div>
 			)}
 
-			<button disabled={!session} onClick={addItemToBasket} className={`button mt-auto ${!session && "mt-auto from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"}`}>{!session ? "Sign In To Add To Basket" : "Add To Basket"}</button>
+			<button disabled={!session} onClick={addItemToBasket} className="button mt-auto">Add To Basket</button>
+			{/*<button disabled={!session} onClick={addItemToBasket} className={`button mt-auto ${!session && "mt-auto from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"}`}>{!session ? "Sign In To Add To Basket" : "Add To Basket"}</button>*/}
 		</div>
 	)
 }

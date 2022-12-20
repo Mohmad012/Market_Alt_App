@@ -24,7 +24,7 @@ const Checkout = () => {
 		// call the backend to create a checkout session...
 		const checkoutSession = await axios.post('/api/create-checkout-session' , {
 			items:items,
-			email: session.user.email,
+			email: session?.user?.email || "mohmadgamal1000@gmail.com",
 		});
 
 
